@@ -4,5 +4,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   build: {
     transpile: ['@vuepic/vue-datepicker']
-  }
+  },
+  content: {
+    highlight: {
+      theme: {
+        default: "one-dark-pro",
+        dark: "github-dark",
+      },
+    },
+  },
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss"
+  ],
 })
